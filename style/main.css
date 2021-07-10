@@ -1,0 +1,121 @@
+:root{
+    --principal: #440500;
+    --secundario: #DFDDC7;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: Helvetica, sans-serif;
+}
+
+/* ELEMENTOS BASE  */
+
+body{
+    background-color: var(--principal);
+    color: #FFF;
+}
+
+header .container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 50px;
+     padding-right: 50px;
+     padding-top: 10px;
+}
+
+.logo{
+    color: var(--secundario);
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#FFF;
+}
+
+/* FILME PRINCIPAL */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50) 100%), url("/img/capa-principal2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20%;
+    font-size: 50px;
+}
+
+.filme-principal{
+    padding-left: 50px;
+}
+ 
+.botao{
+    background-color: rgba(172, 172, 172, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    
+    padding: 10px 30px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.btnAssistir{
+    color: var(--principal);  
+    background-color: #FFF;
+}
+
+.botao:hover{
+    background-color: rgba(172, 172, 172, 0.5);
+    transition: .3s ease all;
+}
+
+.btnAssistir:hover{
+    background-color: rgba(206, 203, 203, 0.7);
+}
+
+/* CARROSEL */
+
+.carrosel-filmes .tituloCategoria{
+    padding-left: 50px;
+    margin: 20px 0px;
+}
+
+.box-filme{
+    height: 70%;
+    width: 100%;
+    display: block;
+}
+
